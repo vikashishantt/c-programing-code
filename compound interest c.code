@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float p,r,t,ci;
+	printf("enter the value of principal amount=");
+	scanf("%f",&p);
+	printf("enter the value of rate interest= ");
+	scanf("%f",&r);
+	printf("enter the value of time duration= ");
+	scanf("%f",&t);
+	ci=p*pow(1+r/100,t)-p;
+	printf("compount interest is %f\n", ci);
+	return 0;
+}
